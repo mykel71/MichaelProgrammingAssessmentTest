@@ -1,0 +1,7 @@
+Question:
+If we list all the natural (integer) numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Write a program in the language of your choice to calculate the sum of all the multiples of 3 or 5 below 1000. Include the source code and the calculated value in your answer.
+
+Solution Explanation:
+
+CalculateMultiplesSum function takes a limit as input and calculates the sum of all the multiples of 3 or 5 below that limit. It initializes a variable sum to store the running sum of the multiples. It then iterates from 1 up to the limit (exclusive) and checks if each number is divisible by 3 or 5 using the modulo operator (%). If a number is divisible by 3 or 5, it adds it to the sum.

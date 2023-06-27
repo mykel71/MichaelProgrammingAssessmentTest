@@ -1,0 +1,11 @@
+Question:
+Given a list containing Province, CustomerName and SalesValue (sorted by Province and CustomerName), output each CustomerName and SalesValue with the total SalesValue per Province.
+
+Explanation:
+We can use the Grouping Algorithm to output each CustomerName and SalesValue with the total SalesValue per Province. It involves iterating over the sorted list and keeping track of the current province and total sales value for each province. Whenever the province changes, the accumulated sales value for the previous province is outputted, along with the individual customer names and their sales values.
+
+- SalesReport class represents each entry in the sales data list. 
+- The SalesAnalyzer class contains the GenerateSalesReport method, which takes the sales data list as input and generates 	the sales report. 
+- The Main method provides a sample data set and outputs the sales report.
+
+The algorithm iterates over the sales data, comparing the province with the previous entry. Whenever the province changes, the accumulated sales value for the previous province is outputted as "Total Sales Value" along with the individual customer names and their sales values. The accumulated sales value for the last province is also outputted.

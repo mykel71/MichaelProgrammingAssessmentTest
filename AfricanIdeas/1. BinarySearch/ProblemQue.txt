@@ -1,0 +1,10 @@
+Question 1:
+Given an alphabetically sorted list of 500,000 people’s names and telephone numbers. Find a given person’s telephone number in the shortest amount of time.
+
+Solution Explanation:
+To find the the user's phone number in a shortest amount of time we utilize the Binary Search Algorithm. 
+In implementing this, we have a PhoneSearch function that performs the binary search on the names array to find the index of the target name. If the name is found, it returns the index; otherwise, it returns -1.
+
+The FindPhoneNumber function utilizes the PhoneSearch function to find the index of the target name in the names array. If the index is found, it retrieves the corresponding phone number from the phoneNumbers array and returns it. Otherwise, it returns null to indicate that the target name was not found.
+
+In the Main method, we initialize the names and phoneNumbers arrays with example data. We specify the targetName we want to find and call the FindPhoneNumber function to retrieve the phone number. Finally, we display the result on the console.

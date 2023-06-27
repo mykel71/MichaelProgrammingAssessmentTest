@@ -1,0 +1,11 @@
+Question:
+You are required to use a single integer value to store multiple values.
+
+Solution Explanation:
+
+To store multiple values using a single integer value, we can utilize bitwise operations and bit manipulation techniques. We can assign each value to a specific range of bits within the integer, allowing us to represent multiple values simultaneously
+
+StoreValues method takes thre values (value1, value2, and value3) and uses bitwise operations to store them within a single integer (storage). 
+The bitwise AND operation is applied to each value using the respective maximum value constants (MaxValue1, MaxValue2, MaxValue3) to ensure that the values are within the allowed range. Then, the values are shifted to their corresponding bit positions (Value1Position, Value2Position, Value3Position) and combined using the bitwise OR operation.
+
+The RetrieveValues method performs the reverse operation, extracting the stored values from the integer storage using bitwise operations. The values are retrieved by masking and shifting the bits based on their positions and maximum value constants.

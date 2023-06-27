@@ -1,0 +1,8 @@
+Question:
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+Write a program in the language of your choice to output the 10001st prime number. Include the source code and the value in your answer.
+
+Solution Explanation:
+the IsPrime function checks if a given number is prime. It returns true if the number is prime, and false otherwise. The function uses a basic prime-checking algorithm by iterating from 2 up to the square root of the number and checking for divisibility.
+
+The FindNthPrime function finds the nth prime number. It uses a while loop to increment the number and count the prime numbers until the desired nth prime is found. It calls the IsPrime function to check if a number is prime.

@@ -1,0 +1,13 @@
+Question:
+You have been given a large list of people’s names and have been asked to highlight all duplicates where the exact same name appears more than once, as well as highlight any possible duplicates where there may be misspellings of the same name. Produce the required output.
+
+Solution Explanation:
+
+With this type of problem the best way is comparing each name in the list with all subsequent names to identify exact duplicates and potential misspellings.
+
+NameDuplicates class contains the FindDuplicates method, which takes a list of names as input and identifies exact duplicates and potential misspellings. 
+The NormalizeName method is used to remove spaces and convert names to lowercase for comparison.
+
+This algorithm uses a HashSet (uniqueNames) to store unique names encountered so far. If a name is already present in uniqueNames, it is considered an exact duplicate and added to the duplicates HashSet.
+
+This algorithm also uses a Dictionary (potentialDuplicates) to store potential misspellings. Each name is normalized using the NormalizeName method, and if the normalized name is not present in potentialDuplicates, a new entry is created. The original name is then added to the corresponding list of potential misspellings.

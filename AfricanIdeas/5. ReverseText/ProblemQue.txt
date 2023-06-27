@@ -1,0 +1,8 @@
+Question:
+
+Write a program in the language of your choice to input a sentence from the user and then output the sentence in reverse. For example, if the user types in “The Rain in Spain”, then the output should be “Spain in Rain The”.
+
+Solution Explation:
+ReverseSentence function takes a sentence as input and returns the reversed sentence. 
+It accomplishes this by first splitting the sentence into individual words using the Split method and the space character as the delimiter. Then, it uses the Array.
+Reverse method to reverse the order of the words..it joins the reversed words into a new sentence using the string.Join method and a space as the separator.
